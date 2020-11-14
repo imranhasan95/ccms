@@ -1,0 +1,714 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+}
+/*================= Navbar Pasrt CSS =================*/
+.navbar-light .navbar-nav .nav-link {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link:after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 0px;
+    background: #dd0606;
+    left: 50%;
+    top: -45px;
+    transform: translateX(-50%);
+    transition: all linear .3s;
+    opacity: 0;
+
+}
+.navbar .navbar-nav .nav-link {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.navbar .navbar-nav .nav-link:hover:after {
+    top: -45px;
+    opacity: 1;
+    height: 50px;
+}
+.navbar {
+	padding: 35px 1rem;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    transition: all linear .3s;
+
+}
+.bg {
+    background: #191919;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    animation: menu 1s;
+}
+@keyframes menu{
+    from{top:-50px}
+    to{top: 0px}
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #f79e10;
+}
+.navbar-light .navbar-nav .nav-link:focus{
+	color: #fff;
+}
+.navbar .navbar-nav .nav-link.active {
+    color: #f79e10;
+}
+.navbar .navbar-nav .nav-link.active:after {
+    top: -45px;
+    opacity: 1;
+    height: 50px;
+}
+/*================= banner Pasrt CSS =================*/
+#banner{
+    background: url(../images/pic1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 380px;
+    padding-bottom: 380px;
+    position: relative;
+}
+#banner:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.56);
+}
+.banner-slider {
+    position: relative;
+    z-index: 99;
+}
+.banner-item {
+    padding-bottom: 25px;
+}
+.banner-item h3 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    padding-bottom: 3px;
+}
+.banner-item h1 {
+    font-size: 52px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    padding-bottom: 14px;
+}
+.banner-item p {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    line-height: 24px;
+    padding-bottom: 45px;
+}
+.banner-item a {
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    padding: 21px 38px;
+    background: #f79e10;
+    border-radius: 3px;
+    border-bottom: 3px solid #736357;
+    text-transform: uppercase;
+}
+/*================= service Pasrt CSS =================*/
+#package {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.package-item i {
+    font-size: 48px;
+    color: #555;
+    transition: all linear .3s;
+}
+.package-item h3 {
+    font-size: 22px;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 26px;
+    padding-bottom: 15px;
+    transition: all linear .3s;
+}
+.package-item p{
+    font-size: 14px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+}
+.package-item{
+    position: relative;
+    padding-bottom: 30px;
+}
+.package-item:after{
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background: #f1eee9;
+    transition: all linear .3s;
+}
+.package-item:hover i{
+    color: #c7b299;
+}
+.package-item:hover h3{
+    color: #c7b299;
+}
+.package-item:hover:after{
+    background: #c7b299;
+}
+/*================= Idea Pasrt CSS =================*/
+#idea {
+    background: #fbfaf8;
+    padding-top: 83px;
+}
+.idea-head {
+    padding-bottom: 40px;
+}
+.idea-head h2 {
+    font-size: 30px;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding-bottom:18px;
+}
+
+.idea-head p{
+    font-size: 16px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+}
+/*================= purchase Pasrt CSS =================*/
+#booking_package {
+    background-image: linear-gradient(to right, #956353 , #902400);
+    padding-top: 47px;
+    padding-bottom: 47px
+}
+.booking_package-left h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+.booking_package-left span {
+    color: #fff;
+}
+.booking_package-left p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #615855;
+    padding-top: 4px;
+}
+.booking_package-right {
+    padding-top: 20px;
+}
+.booking_package-right a {
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    padding: 21px 38px;
+    background: #f79e10;
+    border-radius: 3px;
+    border-bottom: 3px solid #736357;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+/*================= gallery Pasrt CSS =================*/
+#service {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.buttons {
+    padding-bottom: 40px;
+}
+.buttons button{
+    padding: 10px 17px;
+    border: 1px solid #ebebeb;
+    margin: 0 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #f79e10;
+    text-transform: capitalize;
+    border-radius: 3px;
+}
+.buttons button:hover {
+    background: #f79e10;
+    color: #fff;
+    border-color: #f79e10;
+}
+.mixitup-control-active {
+    background:#f79e10;
+    color: #fff;
+}
+.gal-img {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(85, 85, 85, 0.72);
+    opacity: 0;
+}
+.overlay i {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 24px;
+    transition: all linear .3s;
+    margin:0 15px;
+}
+.overlay i:hover {
+    color:#f79e10;
+}
+.gal-text {
+    padding: 30px 28px;
+    position: relative;
+}
+.gal-text:after {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    top: -10px;
+    left: 20px;
+    transform: rotate(45deg);
+}
+.gal-text h3 {
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 7px;
+}
+.gal-text p{
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+}
+.service-item {
+    padding-bottom: 30px;
+}
+.service-item:hover .overlay {
+    opacity: 1;
+}
+.service-item:hover .gal-text {
+    background: #f79e10;
+}
+.service-item:hover .gal-text:after {
+    background: #f79e10;
+}
+.mixitup-control-active {
+    background:#f79e10;
+    color: #fff!important;
+}
+.load-btn a {
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    color: #f79e10;
+    padding: 20px 38px;
+    background: #ebebeb;
+    border-radius: 3px;
+    border-bottom: 3px solid #dd0606;
+    text-transform: uppercase;
+}
+
+.load-btn a:hover {
+    color: #ebebeb;
+    background: #f79e10;
+}
+
+/*================= mobile Pasrt CSS =================*/
+#mobile {
+    padding-top: 80px;
+}
+.mobile-text {
+    padding-top: 118px;
+}
+.mobile-text h3 {
+    font-size: 30px;
+    color: #555;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 30px;
+}
+.mobile-text p {
+    font-size: 14px;
+    color: #8c8c8c;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28px;
+}
+.features {
+    padding-left: 50px;
+    padding-top: 40px;
+}
+.features i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    background: #c7b299;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 300;
+    margin-right: 30px;
+}
+
+
+
+
+#counter {
+    background-image: linear-gradient(to right, #211b19 , #4e3427);
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.count-item h3 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.count-item p {
+    font-size: 14px;
+    color: #c7b299;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+/*============ Blog  Part CSS =============*/
+#blog {
+    padding-top: 80px;
+    padding-bottom: 142px;
+    position: relative;
+}
+#blog .left, #blog .right{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #f79e10;
+    border: 1px solid #dd0606;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 25px;
+}
+#blog .left:hover {
+    color: #f79e10;
+    border-color: #dd0606;
+}
+#blog .right:hover {
+    color: #f79e10;
+    border-color: #dd0606;
+}
+#blog .right {
+    position: absolute;
+    bottom: 80px;
+    left: 49%;
+}
+#blog .left {
+    position: absolute;
+    bottom: 80px;
+    right: 49%;
+}
+.card-title {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    font-weight: 500;
+    transition:all linear .3s;
+}
+.card-text {
+    font-size: 14px;
+    color: #8c8c8c;
+    font-weight: 300;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+    transition:all linear .3s;
+}
+.card a {
+    font-size: 14px;
+    color: #dd0606;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    transition:all linear .3s;
+}
+.card a i{
+    margin-left: 10px;
+    font-size: 12px;
+}
+.card {
+    position: relative;
+}
+.date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    text-align: center;
+}
+.top {
+    background: #363636;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    height: 35px;
+    line-height: 35px;
+    font-family: 'Montserrat', sans-serif;
+    transition:all linear .3s;
+}
+.bottom {
+    background:#252525;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #ddd;
+    height: 25px;
+    line-height: 25px;
+    text-transform: capitalize;
+    transition:all linear .3s;
+}
+.blog-img {
+    position: relative;
+}
+.over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.7);
+    opacity: 0;
+    transition:all linear .3s;
+}
+.card:hover .over{
+    opacity: 1;
+}
+.card:hover .top{
+    background: #c7b299;
+}
+.card:hover .bottom{
+    background: #a48d72;
+}
+.card:hover .card-body{
+    background: #f79e10;
+}
+.card:hover .card-title{
+    color: #fff;
+}
+.card:hover .card-text{
+    color: #fff;
+}
+.slick-center .over{
+    opacity: 1;
+}
+.slick-center .top{
+    background: #c7b299;
+}
+.slick-center .bottom{
+    background: #a48d72;
+}
+.slick-center .card-body{
+    background: #f79e10;
+}
+.slick-center .card-title{
+    color: #000;
+}
+.slick-center .card-text{
+    color: #fff;
+}
+/*============ client  Part CSS =============*/
+#client {
+    background: url(../images/client.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    position: relative;
+}
+#client:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.7);
+}
+.client-main {
+    position: relative;
+    z-index: 99;
+}
+.back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+.back-top i {
+    width: 40px;
+    height: 40px;
+    background: #dd0606;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+[class*=" imghvr-shutter-in-"]::after, [class*=" imghvr-shutter-in-"]::before, [class^="imghvr-shutter-in-"]::after, [class^="imghvr-shutter-in-"]::before {
+	background: #069552;
+
+}
+[class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
+	background-color: red;
+}
+.iconm i {
+    font-size: 100px;
+    color: red;
+}
+
+/*===================== Contact==============================================*/
+
+
+#contact-us{
+    background: url(../images/contact.jpg) no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+}
+#contact-us h2{
+    color: #fff;
+    padding-bottom: 100px;
+}
+#contact-us address h4{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+#contact-us address p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+#contact-us address .social-icon li{
+    display: inline-block;
+}
+#contact-us address .social-icon li a i{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all linear 0.3s;
+    margin-right: 10px;
+}
+#contact-us address .social-icon li a i.fa-facebook-f{
+    background: #3b5997;
+}
+#contact-us address .social-icon li a i.fa-twitter{
+    background: #3ec2f3;
+}
+#contact-us address .social-icon li a i.fa-google-plus{
+    background: #e44c41;
+}
+#contact-us address .social-icon li a i:hover{
+    background: #fff;
+    color: #49cbcd;
+}
+#contact-us address .info{
+    margin-top: 15px;
+}
+#contact-us address .info li a{
+    color: #bface2;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all linear 0.3s;
+}
+#contact-us address .info li a:hover{
+    color: #fff;
+}
+#contact-us .form_area .input{
+    width: 100%;
+    height: 44px;
+    background: #fff;
+    border: 0;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    color: #c1c1c1;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+#contact-us .form_area textarea.input{
+    height: 180px;
+    resize: none;
+    padding: 20px;
+}
+#contact-us .form_area .send{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    background: #f79e10;
+    border: 0;
+    height: 50px;
+    padding: 0 60px;
+    border-radius: 5px;
+}
+
+/*======================Contact ends========================================*/
